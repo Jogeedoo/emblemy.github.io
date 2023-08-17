@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Information</title>
+    <style>
+	body {
+    font-family: Arial, sans-serif;
+	background-color: #00BFA5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.delivery-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.delivery-details {
+    flex: 1;
+}
+
+.tracking {
+    flex: 1;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.3rem;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #f4f4f4;
+}
+
+	
+	</style>
+</head>
+<body>
+    <header>
+        <h1>Delivery Information</h1>
+    </header>
+    <div class="delivery-container">
+        <section class="delivery-details">
+            <h2>Shipping Options</h2>
+            <p>We offer the following shipping options:</p>
+            <ul>
+                <li>Standard Shipping: Estimated delivery in 5-7 business days.</li>
+                <li>Expedited Shipping: Estimated delivery in 2-3 business days.</li>
+                <li>International Shipping: Delivery times vary by location.</li>
+            </ul>
+            <p>Shipping costs will be calculated at checkout based on your location and selected shipping method.</p>
+        </section>
+        <section class="tracking">
+            <h2>Track Your Order</h2>
+            <p>To track your order, please enter your order number and email address below:</p>
+            <form action="track_order.php" method="post">
+                <label for="order-number">Order Number:</label>
+                <input type="text" id="order-number" name="order-number" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <button type="submit">Track Order</button>
+            </form>
+        </section>
+    </div>
+	 <div class="lost-package">
+        <h2>Lost or Delayed Packages</h2>
+        <p>If your package is lost or significantly delayed beyond the estimated delivery time, please follow these steps:</p>
+        <ol>
+            <li>Contact our customer support team at <strong>temblemybookshop@yahoo.com</strong> or call <strong>[123546978]</strong> to report the issue.</li>
+            <li>Provide your order number and relevant details so we can assist you more effectively.</li>
+            <li>We will initiate an investigation with the shipping carrier to locate your package.</li>
+            <li>If the package cannot be located, we will work with you to provide a suitable solution, which may include reshipping the order or issuing a refund.</li>
+        </ol>
+    </div>
+	
+	<h5>We are happy that you are buying our books and may receive a special gift.</h5>
+	</body>
+    <footer>
+        <p>&copy; _T_Emblemy Collectible Books. All rights reserved.</p>
+    </footer>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+	
+	<style>
+	body {
+    font-family: Arial, sans-serif;
+	 background-color: #00BFA5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+     background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-media a {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.3rem;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+	</style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <div class="contact-container">
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> temblemybookshop@yahoo.com</p>
+            <p><strong>Phone:</strong> [123546978]</p>
+            <p><strong>Customer Support Hours:</strong></p>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM (EST)</p>
+            <p>Saturday: 10:00 AM - 4:00 PM (EST)</p>
+            <p>Closed on Sundays and major holidays.</p>
+            <p><strong>Mailing Address:</strong></p>
+            <p>[T Emblemy Collectible Books]<br>1234 Bookworm Avenue<br>Cityville<br>Mauritius</p>
+            <div class="social-media">
+                <p><strong>Connect with us:</strong></p>
+                <a href="[Facebook Link]">Facebook</a>
+                <a href="[Twitter Link]">Twitter</a>
+                <a href="[Instagram Link]">Instagram</a>
+            </div>
+        </section>
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+	</body>
+    <footer>
+        <p>&copy; _T_Emblemy Collectible Books. All rights reserved.</p>
+    </footer>
+<html>
